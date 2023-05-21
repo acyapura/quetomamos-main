@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  background: url(../Img/martiniCup2.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #dff2b0;
+}
+
+.header {
+  /* width: 100%; */
+  padding: 0 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* font-size: 60px; */
+}
+.h1 {
+  font-family: "Lobster", cursive;
+  opacity: 1;
+  font-size: 80px;
+  margin-top: 30px;
+  margin-bottom:30px;
+
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 45px;
+}
+.navBar a {
+  font-family: "Shrikhand", cursive;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px 50px;
+  transition: 0.4s;
+  opacity: 0.5;
+}
+
+.navBar a:visited,
+.navBar a:active,
+.navBar a:link {
+  color: #dff2b0;
+}
+
+.navBar a:hover {
+  border-radius: 10px;
+  padding: 0px 35px;
+  font-size: 40px;
+  opacity: 1;
+  text-shadow: 0px 0px 8px #333;
+  border-bottom: 1px solid #333333a5;
+  border-top: 1px solid #333333a5;
+}
+/* Footer */
+.gridFooter {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gridFooter .social {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.autoria {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 25%;
+  opacity: 0.3;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 25%;
+  opacity: 0.3;
+}
+
+.social a img {
+  width: 40px;
+  transition: all 0.4s;
+  opacity: 0.5;
+}
+
+.social a img:hover {
+  border-radius: 10px;
+  width: 60px;
+  box-shadow: 0px 0px 8px 4px #333;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1450px) {
+  .gridHeader {
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header h1 {
+    font-size: 5rem;
+    margin: 20px;
+    margin-top: 100px;
+    padding-bottom: 3rem;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: space-evenly;
+  }
+
+  .navBar a {
+    width: 1fr;
+    
+  }
+
+  .gridFooter .social {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  }
+  .gridFooter .social img {
+    margin: 0 10px;
+  }
+
+  .autoria,
+  .copyright {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .h1 {
+    font-size: 5rem;
+    margin: 20px;
+    margin-top: 100px;
+    padding-bottom: 3rem;
+  }
+
+  .gridFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 50px;
+  }
+  .navBar {
+    flex-wrap: wrap;
+  }
+
+  .navBar a {
+    width: 1fr;
+  }
+
+  .gridFooter .social {
+    display: flex;
+    margin-top: 30%;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .gridFooter .social img {
+    margin: 0 10px;
+  }
+
+  .autoria,
+  .copyright {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .header h1 {
+    font-size: 50px;
+  }
+  .navBar a {
+    font-size: 35px;
+  }
+}
